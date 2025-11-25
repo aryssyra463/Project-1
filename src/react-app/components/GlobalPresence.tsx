@@ -21,7 +21,7 @@ export default function GlobalPresence() {
         <div className="bg-white rounded-lg p-8 shadow-lg">
           <p className="text-center text-blue-900 text-lg">
             Training students from <span className="font-semibold">North America</span>,{' '}
-            <span className="font-semibold">Europe</span>, <span className="font-semibold">Asia</span>,{' '}
+            <span className="font-semibold">Australia</span>, <span className="font-semibold">Asia</span>,{' '}
             <span className="font-semibold">Middle East</span>, and <span className="font-semibold">Africa</span>
           </p>
         </div>
