@@ -26,7 +26,7 @@ export default function BookDemo() {
       <Header />
       <main className="max-w-4xl mx-auto px-6 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">Book a Free Demo Class</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">Book a Demo Class</h1>
           <p className="text-xl text-blue-900 mb-6">
             Experience our teaching style and see how we can help you achieve your target score
           </p>
@@ -125,7 +125,7 @@ export default function BookDemo() {
                 type="submit"
                 className="w-full bg-blue-900 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition"
               >
-                Book Free Demo
+                Book Demo
               </button>
             </form>
           </div>
@@ -145,13 +145,13 @@ export default function BookDemo() {
             <div className="bg-green-50 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-4">Quick Contact</h3>
               <a
-                href="https://wa.me/1234567890"
+                href="https://whatsapp.com/channel/0029VbCBj9L30LKOl3Ocbd2e"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center w-full justify-center px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition"
               >
                 <span className="mr-2">💬</span>
-                Chat on WhatsApp
+                Join my WhatsApp Channel
               </a>
             </div>
           </div>

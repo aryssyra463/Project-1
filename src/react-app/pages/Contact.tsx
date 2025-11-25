@@ -80,13 +80,13 @@ export default function Contact() {
 
             <div className="mb-8">
               <a
-                href="https://wa.me/1234567890"
+                href="https://whatsapp.com/channel/0029VbCBj9L30LKOl3Ocbd2e"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition"
               >
                 <span className="mr-2">💬</span>
-                Chat on WhatsApp
+                Join my WhatsApp Channel
               </a>
             </div>
 

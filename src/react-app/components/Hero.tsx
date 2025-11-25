@@ -19,7 +19,7 @@ export default function Hero() {
                 to="/book-demo"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition shadow-lg hover:shadow-xl"
               >
-                Book Free Demo
+                Book Demo
               </Link>
               <Link
                 to="/courses"

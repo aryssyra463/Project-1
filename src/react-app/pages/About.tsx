@@ -36,7 +36,7 @@ export default function About() {
               to="/book-demo"
               className="inline-block px-8 py-3 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-800 transition"
             >
-              Book a Free Demo Class
+              Book a Demo Class
             </Link>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function About() {
             to="/book-demo"
             className="inline-block px-8 py-4 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-800 transition text-lg"
           >
-            Book a Free Demo Class
+            Book a Demo Class
           </Link>
         </div>
       </main>

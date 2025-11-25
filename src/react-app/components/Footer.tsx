@@ -48,7 +48,7 @@ export default function Footer() {
               to="/book-demo"
               className="inline-block px-4 py-2 bg-blue-900 text-white text-sm font-semibold rounded hover:bg-blue-800 transition"
             >
-              Book Free Demo
+              Book Demo
             </Link>
           </div>
         </div>
