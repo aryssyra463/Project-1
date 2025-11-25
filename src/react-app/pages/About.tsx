@@ -11,13 +11,14 @@ export default function About() {
           <div>
             <img
               src="/About/PritiGogoi.jpeg"
-              alt="Priti Gogoi - Founder of FluentEdge"
-              className="w-full h-[492px] object-cover object-top rounded-lg shadow-lg"
+              alt="Ms. Priti Gogoi - Founder & Lead Trainer at FluentEdge"
+              className="w-full h-[620px] object-cover object-top rounded-lg shadow-lg"
             />
           </div>
           <div>
-            <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">Your Expert Trainer</h1>
-            <p className="text-xl text-blue-900 mb-6">IELTS/TOEFL/CELPIP/GRE/PTE Specialist</p>
+            <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-2">Your Expert Trainer</h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">Ms. Priti Gogoi</h2>
+            <p className="text-xl text-blue-900 mb-6 font-medium">IELTS/TOEFL/CELPIP/GRE/PTE Specialist</p>
             <p className="text-lg text-blue-900 mb-6">
               An accomplished educator and language trainer with over a decade's international experience in India and the USA, I specialise in English language acquisition, academic communication, and global exam preparation. I help learners achieve fluency, confidence, and clarity through research-driven, learner-focused training. My training approach combines evidence-based methodologies with real-world application to ensure measurable progress.
             </p>
