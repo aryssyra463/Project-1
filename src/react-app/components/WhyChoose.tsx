@@ -25,7 +25,7 @@ export default function WhyChoose() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">Why Choose Me</h2>
+        <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">Why Choose Us</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {points.map((point, index) => (
             <div key={index} className="text-center p-6 rounded-lg bg-gray-50 hover:bg-gray-100 transition">
