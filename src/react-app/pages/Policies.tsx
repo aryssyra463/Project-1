@@ -10,10 +10,10 @@ export default function Policies() {
       title: 'Terms & Conditions',
       content: `
         <h2>1. Acceptance of Terms</h2>
-        <p>By accessing and using FluentEdge services, you accept and agree to be bound by these Terms and Conditions.</p>
+        <p>By accessing and using FluentEdgeLab services, you accept and agree to be bound by these Terms and Conditions.</p>
         
         <h2>2. Services</h2>
-        <p>FluentEdge provides online test preparation coaching for IELTS, TOEFL, PTE, CELPIP, and GRE. Services include live online classes, study materials, and personalized feedback.</p>
+        <p>FluentEdgeLab provides online test preparation coaching for IELTS, TOEFL, PTE, CELPIP, and GRE. Services include live online classes, study materials, and personalized feedback.</p>
         
         <h2>3. Payment Terms</h2>
         <p>Course fees must be paid in full or according to the agreed payment plan. All fees are non-refundable except as stated in our Refund Policy.</p>
@@ -22,7 +22,7 @@ export default function Policies() {
         <p>Students are expected to attend classes regularly, complete assignments, and maintain respectful communication with the instructor.</p>
         
         <h2>5. Intellectual Property</h2>
-        <p>All course materials, including but not limited to videos, documents, and resources, are the intellectual property of FluentEdge and may not be shared or distributed without permission.</p>
+        <p>All course materials, including but not limited to videos, documents, and resources, are the intellectual property of FluentEdgeLab and may not be shared or distributed without permission.</p>
         
         <h2>6. Limitation of Liability</h2>
         <p>While we strive to help students achieve their target scores, we cannot guarantee specific test results. Individual results may vary.</p>

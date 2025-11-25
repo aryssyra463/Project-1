@@ -29,7 +29,7 @@
 Open PowerShell/Terminal in your project folder and run:
 
 ```bash
-cd "C:\Users\azaza\OneDrive\Desktop\FluentEdge"
+cd "C:\Users\azaza\OneDrive\Desktop\FluentEdgeLab"
 git init
 ```
 
@@ -62,7 +62,7 @@ git commit -m "Initial commit: React + Vite + TypeScript setup"
 
 2. **Repository Settings:**
    - Repository name: `fluent-edge` (or any name you like)
-   - Description: "FluentEdge - React + Vite + TypeScript"
+   - Description: "FluentEdgeLab - React + Vite + TypeScript"
    - Visibility: **Public** (for free Netlify) or **Private** (if you have paid Netlify)
    - **DO NOT** initialize with README, .gitignore, or license (we already have these)
    - Click "Create repository"

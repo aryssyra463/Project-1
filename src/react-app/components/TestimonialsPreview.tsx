@@ -32,7 +32,7 @@ const TestimonialCarousel = () => {
     },
     {
       id: 4,
-      text: "Best investment I made for my GRE preparation. Thank you FluentEdge!",
+      text: "Best investment I made for my GRE preparation. Thank you FluentEdgeLab!",
       name: "Alex Martinez",
       location: "Spain",
       rating: 5

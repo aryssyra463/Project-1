@@ -11,7 +11,7 @@ export default function About() {
           <div>
             <img
               src="/About/PritiGogoi.jpeg"
-              alt="Ms. Priti Gogoi - Founder & Lead Trainer at FluentEdge"
+              alt="Ms. Priti Gogoi - Founder & Lead Trainer at FluentEdgeLab"
               className="w-full h-[620px] object-cover object-top rounded-lg shadow-lg"
             />
           </div>

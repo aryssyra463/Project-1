@@ -151,7 +151,7 @@ export default function Testimonials() {
       name: 'Yuki Tanaka',
       country: 'Japan',
       course: 'PTE',
-      text: 'PTE Academic was challenging for me, but the structured approach and constant feedback helped me score 85. Thank you FluentEdge!',
+      text: 'PTE Academic was challenging for me, but the structured approach and constant feedback helped me score 85. Thank you FluentEdgeLab!',
       rating: 5,
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200'
     },
@@ -183,7 +183,7 @@ export default function Testimonials() {
       name: 'Sophie Martin',
       country: 'France',
       course: 'CELPIP',
-      text: 'Moved to Canada with CLB 10 thanks to FluentEdge! The Canadian accent training and real-life scenario practice were invaluable.',
+      text: 'Moved to Canada with CLB 10 thanks to FluentEdgeLab! The Canadian accent training and real-life scenario practice were invaluable.',
       rating: 5,
       image: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=200'
     },

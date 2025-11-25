@@ -1,8 +1,8 @@
 export default function Features() {
   const features = [
     {
-      title: 'UNLOCK UNLIMITED LEARNING ON FLUENTEDGE APP',
-      description: 'FluentEdge brings you lifetime access to a vast collection of multimedia learning materials, including books, grammar exercises, vocabulary lessons, music, and movies.',
+      title: 'UNLOCK UNLIMITED LEARNING ON FLUENTEDGELAB APP',
+      description: 'FluentEdgeLab brings you lifetime access to a vast collection of multimedia learning materials, including books, grammar exercises, vocabulary lessons, music, and movies.',
       image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800',
     },
     {
@@ -12,7 +12,7 @@ export default function Features() {
     },
     {
       title: 'CAREER OPPORTUNITIES',
-      description: 'At FluentEdge, we offer endless opportunities to help you develop your career. Work in multinational companies, work abroad, and expand your business internationally.',
+      description: 'At FluentEdgeLab, we offer endless opportunities to help you develop your career. Work in multinational companies, work abroad, and expand your business internationally.',
       image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800',
     },
   ];

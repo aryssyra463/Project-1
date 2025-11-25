@@ -115,6 +115,28 @@ export default function CourseDetail() {
         'Score improvement strategies'
       ],
       improvement: 'Average score improvement: 5-8 points in 2-3 months'
+    },
+    duolingo: {
+      title: 'Duolingo English Test Training',
+      overview: 'The Duolingo English Test (DET) is a modern, computer-adaptive test accepted by thousands of institutions worldwide. Our training helps you master the unique format and achieve your target score quickly.',
+      image: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800',
+      learnPoints: [
+        'Master the adaptive test format',
+        'Excel in Literacy, Comprehension, Conversation, and Production subscores',
+        'Improve typing speed and accuracy',
+        'Practice interactive reading and writing tasks',
+        'Develop speaking fluency for video responses',
+        'Learn strategies for the unique question types'
+      ],
+      features: [
+        'Live online coaching sessions',
+        'Personal evaluation and feedback',
+        'Mock tests simulating real DET experience',
+        'Flexible scheduling options',
+        'Quick preparation timeline (2-4 weeks)',
+        'Score improvement strategies'
+      ],
+      improvement: 'Average score improvement: 15-25 points in 2-4 weeks'
     }
   };
 

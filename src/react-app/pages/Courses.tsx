@@ -53,6 +53,16 @@ export default function Courses() {
         'Reading comprehension',
         'Analytical writing'
       ]
+    },
+    {
+      name: 'Duolingo English Test',
+      path: '/courses/duolingo',
+      image: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600',
+      benefits: [
+        'Fast & affordable test prep',
+        'Adaptive test strategies',
+        'Quick results in 48 hours'
+      ]
     }
   ];
 

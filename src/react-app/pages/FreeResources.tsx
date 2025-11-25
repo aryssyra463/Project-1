@@ -8,7 +8,7 @@ const downloadableContent: Record<string, string> = {
   'IELTS Writing Task 2 Templates': `
 ================================================================================
                     IELTS WRITING TASK 2 TEMPLATES
-                         By FluentEdge
+                         By FluentEdgeLab
 ================================================================================
 
 TABLE OF CONTENTS
@@ -127,7 +127,7 @@ CONCLUDING: In conclusion, To sum up, Overall, In summary
 EXPRESSING OPINION: In my view, I believe, From my perspective
 
 ================================================================================
-                    © FluentEdge - www.fluentedge.com
+                    © FluentEdgeLab - www.fluentedge.com
 ================================================================================
 `,
 
@@ -135,7 +135,7 @@ EXPRESSING OPINION: In my view, I believe, From my perspective
 ================================================================================
                     TOEFL HIGH-FREQUENCY VOCABULARY LIST
                               500 Essential Words
-                              By FluentEdge
+                              By FluentEdgeLab
 ================================================================================
 
 SECTION 1: ACADEMIC WORDS (100 Words)
@@ -317,7 +317,7 @@ SECTION 6: GENERAL ACADEMIC (50 Words) - Words 451-500
 7. Use words in conversations
 
 ================================================================================
-                    © FluentEdge - www.fluentedge.com
+                    © FluentEdgeLab - www.fluentedge.com
 ================================================================================
 `,
 
@@ -325,7 +325,7 @@ SECTION 6: GENERAL ACADEMIC (50 Words) - Words 451-500
 ================================================================================
                     PTE SPEAKING PRACTICE QUESTIONS
                          100+ Questions with Tips
-                              By FluentEdge
+                              By FluentEdgeLab
 ================================================================================
 
 TABLE OF CONTENTS
@@ -541,7 +541,7 @@ CONTENT:
 - Stay on topic
 
 ================================================================================
-                    © FluentEdge - www.fluentedge.com
+                    © FluentEdgeLab - www.fluentedge.com
 ================================================================================
 `,
 
@@ -549,7 +549,7 @@ CONTENT:
 ================================================================================
                     IELTS WRITING SUCCESS GUIDE
                          Complete E-book
-                         By FluentEdge
+                         By FluentEdgeLab
 ================================================================================
 
 CHAPTER 1: UNDERSTANDING IELTS WRITING
@@ -729,7 +729,7 @@ CHAPTER 6: PRACTICE ESSAYS WITH MODEL ANSWERS
 [Contains 10 full practice essays with band 8-9 model answers]
 
 ================================================================================
-                    © FluentEdge - www.fluentedge.com
+                    © FluentEdgeLab - www.fluentedge.com
 ================================================================================
 `
 };
@@ -805,7 +805,7 @@ export default function FreeResources() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'IELTS_Writing_Ebook_FluentEdge.txt';
+      a.download = 'IELTS_Writing_Ebook_FluentEdgeLab.txt';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);

@@ -27,7 +27,7 @@ export default function Contact() {
         body: JSON.stringify({
           access_key: import.meta.env.VITE_WEB3FORMS_KEY,
           subject: `New Contact Form Submission from ${formData.name}`,
-          from_name: 'FluentEdge Lab Website',
+          from_name: 'FluentEdgeLab Lab Website',
           ...formData,
         }),
       });

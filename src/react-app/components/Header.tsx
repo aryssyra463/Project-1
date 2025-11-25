@@ -9,8 +9,12 @@ export default function Header() {
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-24">
-          <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold text-blue-900">FluentEdge</span>
+          <Link to="/" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <span className="text-2xl">
+              <span className="font-semibold text-blue-500">Fluent</span>
+              <span className="font-extrabold text-blue-900">Edge</span>
+              <span className="font-normal text-red-500">Lab</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

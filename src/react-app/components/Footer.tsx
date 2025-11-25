@@ -7,7 +7,11 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-8">
           <div>
-            <h3 className="text-lg font-bold mb-4">FluentEdge</h3>
+            <Link to="/" className="text-lg mb-4 block cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <span className="font-semibold text-blue-400">Fluent</span>
+              <span className="font-extrabold text-white">Edge</span>
+              <span className="font-normal text-red-400">Lab</span>
+            </Link>
             <p className="text-gray-400 text-sm">
               Expert IELTS, TOEFL, PTE, CELPIP & GRE training for students and professionals worldwide.
             </p>
@@ -51,7 +55,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800">
           <div className="mb-4 md:mb-0">
-            <p className="text-sm text-gray-400">© 2025 FLUENTEDGE. All rights reserved.</p>
+            <p className="text-sm text-gray-400">© 2025 FLUENTEDGELAB. All rights reserved.</p>
           </div>
           
           <div className="flex items-center space-x-6 mb-4 md:mb-0">

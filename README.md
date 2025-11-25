@@ -1,4 +1,4 @@
-# FluentEdge
+# FluentEdgeLab
 
 A modern React application built with Vite, TypeScript, and Tailwind CSS.
 
@@ -49,7 +49,7 @@ npm run lint
 ## Project Structure
 
 ```
-FluentEdge/
+FluentEdgeLab/
 ├── src/
 │   ├── react-app/          # React application
 │   │   ├── components/     # React components
