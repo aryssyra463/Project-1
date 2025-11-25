@@ -29,7 +29,7 @@ export default function Features() {
               }`}
             >
               <div className={index % 2 === 1 ? 'md:order-2' : ''}>
-                <h2 className="text-4xl font-bold text-blue-900 mb-6 tracking-wide">
+                <h2 className="text-5xl md:text-6xl font-bold text-blue-900 mb-6 tracking-wide">
                   {feature.title}
                 </h2>
                 <p className="text-lg text-blue-900 leading-relaxed">

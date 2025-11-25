@@ -26,12 +26,12 @@ export default function BookDemo() {
       <Header />
       <main className="max-w-4xl mx-auto px-6 py-20">
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-blue-900 mb-4">Book a Free Demo Class</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">Book a Free Demo Class</h1>
           <p className="text-xl text-blue-900 mb-6">
             Experience our teaching style and see how we can help you achieve your target score
           </p>
           <div className="bg-blue-50 rounded-lg p-6 mb-8">
-            <h2 className="text-2xl font-semibold text-blue-900 mb-4">What to Expect in Your Demo</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">What to Expect in Your Demo</h2>
             <ul className="text-left max-w-2xl mx-auto space-y-2 text-blue-900">
               <li className="flex items-start">
                 <span className="text-green-600 mr-2">✓</span>

@@ -16,7 +16,7 @@ export default function About() {
             />
           </div>
           <div>
-            <h1 className="text-4xl font-bold text-blue-900 mb-4">Your Expert Trainer</h1>
+            <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">Your Expert Trainer</h1>
             <p className="text-xl text-blue-900 mb-6">IELTS/TOEFL/CELPIP/GRE/PTE Specialist</p>
             <p className="text-lg text-blue-900 mb-6">
               An accomplished educator and language trainer with over a decade's international experience in India and the USA, I specialise in English language acquisition, academic communication, and global exam preparation. I help learners achieve fluency, confidence, and clarity through research-driven, learner-focused training. My training approach combines evidence-based methodologies with real-world application to ensure measurable progress.
@@ -41,7 +41,7 @@ export default function About() {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-blue-900 mb-6">My Teaching Philosophy</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">My Teaching Philosophy</h2>
           <p className="text-lg text-blue-900 mb-4">
             I believe that every student is unique and requires a tailored approach to test preparation. My methodology focuses on:
           </p>
@@ -54,14 +54,14 @@ export default function About() {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-blue-900 mb-6">Global Student Reach</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Global Student Reach</h2>
           <p className="text-lg text-blue-900 mb-4">
             I have successfully trained students from over 50 countries, helping them achieve their academic and professional goals. Whether you're preparing for university admission, immigration, or career advancement, I'm here to guide you.
           </p>
         </div>
 
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-blue-900 mb-6">Certifications & Credentials</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Certifications & Credentials</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="font-semibold text-blue-900 mb-2">IELTS Certified Trainer</h3>

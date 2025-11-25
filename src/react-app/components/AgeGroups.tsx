@@ -27,7 +27,7 @@ export default function AgeGroups() {
             className="w-full h-[500px] object-cover rounded-lg shadow-lg"
           />
           <div>
-            <h2 className="text-4xl font-bold text-blue-900 mb-6 tracking-wide">
+            <h2 className="text-5xl md:text-6xl font-bold text-blue-900 mb-6 tracking-wide">
               EVERY AGE-GROUP
             </h2>
             <p className="text-lg text-blue-900 leading-relaxed">

@@ -55,14 +55,14 @@ export default function Contact() {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="max-w-6xl mx-auto px-6 py-20">
-        <h1 className="text-5xl font-bold text-center text-blue-900 mb-4">Contact Us</h1>
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-4">Contact Us</h1>
         <p className="text-xl text-center text-blue-900 mb-12">
           Get in touch for inquiries or support
         </p>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Contact Information</h2>
             <div className="space-y-4 mb-8">
               <div>
                 <p className="font-semibold text-blue-900 mb-1">Email</p>
@@ -102,7 +102,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Send a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="text"

@@ -5,9 +5,13 @@ import Footer from '@/react-app/components/Footer';
 
 export default function Blog() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
   const categories = ['All', 'IELTS', 'TOEFL', 'GRE', 'PTE', 'CELPIP', 'Tips', 'Strategies'];
+
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(category);
+  };
 
   const posts = [
     {
@@ -57,13 +61,133 @@ export default function Blog() {
       excerpt: 'Learn the structure and techniques for writing impressive essays.',
       image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600',
       date: '2023-12-25'
+    },
+    {
+      id: 7,
+      title: 'IELTS Writing Task 2: Mastering Opinion Essays',
+      category: 'IELTS',
+      excerpt: 'Step-by-step guide to structuring and writing compelling opinion essays for IELTS.',
+      image: 'https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=600',
+      date: '2024-01-20'
+    },
+    {
+      id: 8,
+      title: 'IELTS Speaking Part 2: How to Ace the Cue Card',
+      category: 'IELTS',
+      excerpt: 'Proven techniques to deliver fluent and coherent responses in IELTS Speaking Part 2.',
+      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600',
+      date: '2024-01-18'
+    },
+    {
+      id: 9,
+      title: 'TOEFL Reading: Strategies for Academic Passages',
+      category: 'TOEFL',
+      excerpt: 'Master the art of reading complex academic texts quickly and accurately.',
+      image: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600',
+      date: '2024-01-12'
+    },
+    {
+      id: 10,
+      title: 'TOEFL Speaking: Independent Task Templates',
+      category: 'TOEFL',
+      excerpt: 'Ready-to-use templates and frameworks for TOEFL Speaking independent tasks.',
+      image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600',
+      date: '2024-01-08'
+    },
+    {
+      id: 11,
+      title: 'GRE Quantitative: Tackling Data Interpretation',
+      category: 'GRE',
+      excerpt: 'Strategies to quickly analyze charts, graphs, and tables in GRE Quant section.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600',
+      date: '2024-01-03'
+    },
+    {
+      id: 12,
+      title: 'GRE AWA: Scoring 5+ on Analytical Writing',
+      category: 'GRE',
+      excerpt: 'Templates and techniques to write high-scoring Issue and Argument essays.',
+      image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600',
+      date: '2023-12-30'
+    },
+    {
+      id: 13,
+      title: 'PTE Read Aloud: Perfect Your Pronunciation',
+      category: 'PTE',
+      excerpt: 'Tips to improve fluency, pronunciation, and oral fluency scores in PTE.',
+      image: 'https://images.unsplash.com/photo-1589903308904-1010c2294adc?w=600',
+      date: '2023-12-27'
+    },
+    {
+      id: 14,
+      title: 'PTE Writing: Summarize Written Text Made Easy',
+      category: 'PTE',
+      excerpt: 'A foolproof method to write perfect one-sentence summaries every time.',
+      image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600',
+      date: '2023-12-22'
+    },
+    {
+      id: 15,
+      title: 'CELPIP Listening: Handling Everyday Conversations',
+      category: 'CELPIP',
+      excerpt: 'Understand Canadian English accents and everyday dialogue patterns.',
+      image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600',
+      date: '2024-01-14'
+    },
+    {
+      id: 16,
+      title: 'CELPIP Writing: Email and Survey Response Guide',
+      category: 'CELPIP',
+      excerpt: 'How to write effective emails and surveys that score high in CELPIP.',
+      image: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=600',
+      date: '2024-01-06'
+    },
+    {
+      id: 17,
+      title: 'CELPIP Speaking: Describing Scenes Like a Pro',
+      category: 'CELPIP',
+      excerpt: 'Learn to describe images and scenes with rich vocabulary and structure.',
+      image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600',
+      date: '2023-12-20'
+    },
+    {
+      id: 18,
+      title: 'How to Stay Motivated During Test Prep',
+      category: 'Tips',
+      excerpt: 'Practical tips to maintain focus and motivation throughout your preparation journey.',
+      image: 'https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?w=600',
+      date: '2023-12-18'
+    },
+    {
+      id: 19,
+      title: 'Creating an Effective Study Schedule',
+      category: 'Tips',
+      excerpt: 'Design a personalized study plan that maximizes retention and minimizes burnout.',
+      image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600',
+      date: '2023-12-15'
+    },
+    {
+      id: 20,
+      title: 'Test Anxiety: Techniques to Stay Calm',
+      category: 'Strategies',
+      excerpt: 'Proven relaxation and mindfulness techniques to overcome test-day nerves.',
+      image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600',
+      date: '2023-12-12'
+    },
+    {
+      id: 21,
+      title: 'Reading Comprehension: Speed vs Accuracy',
+      category: 'Strategies',
+      excerpt: 'Find the right balance between reading speed and understanding for any test.',
+      image: 'https://images.unsplash.com/photo-1474932430478-367dbb6832c1?w=600',
+      date: '2023-12-10'
     }
   ];
 
   const filteredPosts = posts.filter(post => {
     const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = selectedCategory === 'all' || post.category === selectedCategory;
+    const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
 
@@ -71,7 +195,7 @@ export default function Blog() {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="max-w-6xl mx-auto px-6 py-20">
-        <h1 className="text-5xl font-bold text-center text-blue-900 mb-4">Blog</h1>
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-4">Blogs</h1>
         <p className="text-xl text-center text-blue-900 mb-12">
           Tips, strategies, and insights for test preparation
         </p>
@@ -89,10 +213,11 @@ export default function Blog() {
         <div className="flex flex-wrap justify-center gap-2 mb-12">
           {categories.map((category) => (
             <button
+              type="button"
               key={category}
-              onClick={() => setSelectedCategory(category.toLowerCase())}
-              className={`px-4 py-2 rounded-lg font-semibold transition ${
-                selectedCategory === category.toLowerCase()
+              onClick={() => handleCategoryClick(category)}
+              className={`px-4 py-2 rounded-lg font-semibold transition cursor-pointer ${
+                selectedCategory === category
                   ? 'bg-blue-900 text-white'
                   : 'bg-gray-100 text-blue-900 hover:bg-gray-200'
               }`}
@@ -136,4 +261,3 @@ export default function Blog() {
     </div>
   );
 }
-

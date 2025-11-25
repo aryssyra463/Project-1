@@ -126,7 +126,7 @@ export default function CourseDetail() {
       <main>
         <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
           <div className="max-w-6xl mx-auto px-6">
-            <h1 className="text-5xl font-bold mb-4">{course.title}</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">{course.title}</h1>
             <p className="text-xl text-blue-100">{course.overview}</p>
           </div>
         </section>
@@ -138,7 +138,7 @@ export default function CourseDetail() {
                 <img src={course.image} alt={course.title} className="w-full rounded-lg shadow-lg" />
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-blue-900 mb-6">What You Will Learn</h2>
+                <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">What You Will Learn</h2>
                 <ul className="space-y-3">
                   {course.learnPoints.map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
@@ -151,7 +151,7 @@ export default function CourseDetail() {
             </div>
 
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-blue-900 mb-6">Course Features</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Course Features</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 {course.features.map((feature: string, index: number) => (
                   <div key={index} className="flex items-start bg-gray-50 p-4 rounded-lg">
@@ -168,7 +168,7 @@ export default function CourseDetail() {
             </div>
 
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-blue-900 mb-6">Student Testimonials</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Student Testimonials</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <p className="text-blue-900 mb-4 italic">"Excellent coaching! Improved my score significantly."</p>

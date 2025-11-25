@@ -15,28 +15,28 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link to="/" className="text-sm font-medium text-blue-900 hover:text-blue-700 transition">
+            <Link to="/" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 transition">
               Home
             </Link>
-            <Link to="/courses" className="text-sm font-medium text-blue-900 hover:text-blue-700 transition">
+            <Link to="/courses" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 transition">
               Courses
             </Link>
-            <Link to="/about" className="text-sm font-medium text-blue-900 hover:text-blue-700 transition">
+            <Link to="/about" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 transition">
               About
             </Link>
-            <Link to="/testimonials" className="text-sm font-medium text-blue-900 hover:text-blue-700 transition">
+            <Link to="/testimonials" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 transition">
               Testimonials
             </Link>
-            <Link to="/blog" className="text-sm font-medium text-blue-900 hover:text-blue-700 transition">
+            <Link to="/blog" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 transition">
               Blog
             </Link>
-            <Link to="/free-resources" className="text-sm font-medium text-blue-900 hover:text-blue-700 transition">
+            <Link to="/free-resources" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 transition">
               Resources
             </Link>
-            <Link to="/faq" className="text-sm font-medium text-blue-900 hover:text-blue-700 transition">
+            <Link to="/faq" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 transition">
               FAQ
             </Link>
-            <Link to="/contact" className="text-sm font-medium text-blue-900 hover:text-blue-700 transition">
+            <Link to="/contact" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 transition">
               Contact
             </Link>
             <Link to="/book-demo" className="px-4 py-2 bg-blue-900 text-white text-sm font-semibold rounded-lg hover:bg-blue-800 transition">
@@ -57,28 +57,28 @@ export default function Header() {
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-3">
-              <Link to="/" className="text-sm font-medium text-blue-900 hover:text-blue-700 py-2">
+              <Link to="/" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 py-2">
                 Home
               </Link>
-              <Link to="/courses" className="text-sm font-medium text-blue-900 hover:text-blue-700 py-2">
+              <Link to="/courses" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 py-2">
                 Courses
               </Link>
-              <Link to="/about" className="text-sm font-medium text-blue-900 hover:text-blue-700 py-2">
+              <Link to="/about" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 py-2">
                 About
               </Link>
-              <Link to="/testimonials" className="text-sm font-medium text-blue-900 hover:text-blue-700 py-2">
+              <Link to="/testimonials" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 py-2">
                 Testimonials
               </Link>
-              <Link to="/blog" className="text-sm font-medium text-blue-900 hover:text-blue-700 py-2">
+              <Link to="/blog" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 py-2">
                 Blog
               </Link>
-              <Link to="/free-resources" className="text-sm font-medium text-blue-900 hover:text-blue-700 py-2">
+              <Link to="/free-resources" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 py-2">
                 Resources
               </Link>
-              <Link to="/faq" className="text-sm font-medium text-blue-900 hover:text-blue-700 py-2">
+              <Link to="/faq" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 py-2">
                 FAQ
               </Link>
-              <Link to="/contact" className="text-sm font-medium text-blue-900 hover:text-blue-700 py-2">
+              <Link to="/contact" className="text-sm font-medium text-blue-900 hover:font-bold hover:text-blue-700 py-2">
                 Contact
               </Link>
               <Link to="/book-demo" className="text-sm font-medium text-white bg-blue-900 hover:bg-blue-800 py-2 px-4 rounded-lg text-center">

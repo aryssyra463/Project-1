@@ -9,7 +9,7 @@ export default function GlobalPresence() {
   return (
     <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">Global Presence</h2>
+        <h2 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-12">Global Presence</h2>
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const TestimonialCarousel = () => {
@@ -84,7 +85,7 @@ const TestimonialCarousel = () => {
     <div className="min-h-screen bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-blue-900 mb-16">
+        <h2 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-16">
           What Students Say
         </h2>
 
@@ -175,9 +176,12 @@ const TestimonialCarousel = () => {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <button className="bg-blue-900 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-colors duration-200 shadow-md hover:shadow-lg">
+          <Link 
+            to="/testimonials"
+            className="inline-block bg-blue-900 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-colors duration-200 shadow-md hover:shadow-lg"
+          >
             View All Testimonials
-          </button>
+          </Link>
         </div>
       </div>
     </div>

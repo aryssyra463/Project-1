@@ -1,14 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+* {
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea, select, label, li {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* 3D Perspective Effects */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.rotate-x-2:hover {
+  transform: translateY(-1rem) rotateX(5deg);
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* 3D Card Hover Effect */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+}
+
+.card-3d:hover {
+  transform: translateY(-10px) rotateX(5deg) scale(1.02);
 }

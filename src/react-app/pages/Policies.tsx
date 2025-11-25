@@ -80,7 +80,7 @@ export default function Policies() {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="max-w-4xl mx-auto px-6 py-20">
-        <h1 className="text-5xl font-bold text-blue-900 mb-8">{policy.title}</h1>
+        <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-8">{policy.title}</h1>
         <div className="prose prose-lg max-w-none">
           <div dangerouslySetInnerHTML={{ __html: policy.content }} />
         </div>

@@ -83,7 +83,7 @@ export default function FAQ() {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="max-w-4xl mx-auto px-6 py-20">
-        <h1 className="text-5xl font-bold text-center text-blue-900 mb-4">Frequently Asked Questions</h1>
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-4">Frequently Asked Questions</h1>
         <p className="text-xl text-center text-blue-900 mb-12">
           Find answers to common questions about our courses and services
         </p>

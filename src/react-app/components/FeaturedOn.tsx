@@ -2,7 +2,7 @@ export default function FeaturedOn() {
   return (
     <section className="py-16 bg-white border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-blue-900 mb-12 tracking-wider">
+        <h2 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-12 tracking-wider">
           AS FEATURED ON
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 items-center justify-items-center opacity-70">
