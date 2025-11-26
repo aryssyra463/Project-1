@@ -67,35 +67,35 @@ export default function Courses() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
       <Header />
       <main className="max-w-6xl mx-auto px-6 py-20">
-        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-4">Our Courses</h1>
-        <p className="text-xl text-center text-blue-900 mb-12">
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 dark:text-white mb-4">Our Courses</h1>
+        <p className="text-xl text-center text-blue-900 dark:text-slate-300 mb-12">
           Comprehensive training for all major English proficiency tests
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+            <div key={index} className="bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
               <img
                 src={course.image}
                 alt={course.name}
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-blue-900 mb-4">{course.name}</h3>
+                <h3 className="text-2xl font-bold text-blue-900 dark:text-white mb-4">{course.name}</h3>
                 <ul className="space-y-2 mb-6">
                   {course.benefits.map((benefit, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-green-600 mr-2">✓</span>
-                      <span className="text-blue-900">{benefit}</span>
+                      <span className="text-green-600 dark:text-green-400 mr-2">✓</span>
+                      <span className="text-blue-900 dark:text-slate-300">{benefit}</span>
                     </li>
                   ))}
                 </ul>
                 <Link
                   to={course.path}
-                  className="block w-full text-center px-6 py-3 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-800 transition"
+                  className="block w-full text-center px-6 py-3 bg-blue-900 dark:bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-800 dark:hover:bg-blue-500 transition"
                 >
                   View Full Details
                 </Link>
@@ -108,4 +108,3 @@ export default function Courses() {
     </div>
   );
 }
-

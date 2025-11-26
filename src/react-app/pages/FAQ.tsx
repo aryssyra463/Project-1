@@ -80,11 +80,11 @@ export default function FAQ() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
       <Header />
       <main className="max-w-4xl mx-auto px-6 py-20">
-        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-4">Frequently Asked Questions</h1>
-        <p className="text-xl text-center text-blue-900 mb-12">
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 dark:text-white mb-4">Frequently Asked Questions</h1>
+        <p className="text-xl text-center text-blue-900 dark:text-slate-300 mb-12">
           Find answers to common questions about our courses and services
         </p>
 
@@ -92,7 +92,7 @@ export default function FAQ() {
           <div key={section} className="mb-3">
             <button
               onClick={() => toggleSection(section)}
-              className="w-full text-left bg-blue-900 text-white px-6 py-4 rounded-lg font-semibold flex justify-between items-center hover:bg-blue-800 transition-colors"
+              className="w-full text-left bg-blue-900 dark:bg-blue-700 text-white px-6 py-4 rounded-lg font-semibold flex justify-between items-center hover:bg-blue-800 dark:hover:bg-blue-600 transition-colors"
             >
               <span className="uppercase">{section}</span>
               <span className={`transform transition-transform duration-300 ${
@@ -116,13 +116,13 @@ export default function FAQ() {
                 {questions.map((faq, index) => {
                   const questionKey = `${section}-${index}`;
                   return (
-                    <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
+                    <div key={index} className="border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
                       <button
                         onClick={() => toggleQuestion(questionKey)}
-                        className="w-full text-left px-6 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors"
+                        className="w-full text-left px-6 py-4 flex justify-between items-center hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors bg-white dark:bg-slate-900"
                       >
-                        <span className="font-semibold text-blue-900">{faq.q}</span>
-                        <span className={`text-blue-900 transform transition-transform duration-300 ${
+                        <span className="font-semibold text-blue-900 dark:text-white">{faq.q}</span>
+                        <span className={`text-blue-900 dark:text-white transform transition-transform duration-300 ${
                           openQuestion === questionKey ? 'rotate-180' : ''
                         }`}>
                           {openQuestion === questionKey ? '−' : '+'}
@@ -137,7 +137,7 @@ export default function FAQ() {
                       >
                         <div 
                           ref={el => questionRefs.current[questionKey] = el}
-                          className="px-6 py-4 bg-gray-50 text-blue-900"
+                          className="px-6 py-4 bg-gray-50 dark:bg-slate-800 text-blue-900 dark:text-slate-300"
                         >
                           {faq.a}
                         </div>
@@ -151,10 +151,10 @@ export default function FAQ() {
         ))}
 
         <div className="mt-12 text-center">
-          <p className="text-blue-900 mb-4">Still have questions?</p>
+          <p className="text-blue-900 dark:text-slate-300 mb-4">Still have questions?</p>
           <a
             href="/contact"
-            className="inline-block px-8 py-3 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-800 transition"
+            className="inline-block px-8 py-3 bg-blue-900 dark:bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-800 dark:hover:bg-blue-500 transition"
           >
             Contact Us
           </a>

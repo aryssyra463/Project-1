@@ -33,7 +33,7 @@ export default function CertifiedBy() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="max-w-full mx-auto px-6">
         <style>{`
           @keyframes scroll {
@@ -57,7 +57,6 @@ export default function CertifiedBy() {
         
         <div className="overflow-hidden">
           <div className="flex animate-scroll" style={{ width: 'max-content' }}>
-            {/* First set of logos */}
             {certifications.map((cert, index) => (
               <div
                 key={`first-${index}`}
@@ -66,12 +65,11 @@ export default function CertifiedBy() {
                 <img
                   src={cert.logo}
                   alt={cert.alt}
-                  className="h-28 md:h-36 w-auto object-contain"
+                  className="h-28 md:h-36 w-auto object-contain dark:brightness-90 dark:contrast-125"
                 />
               </div>
             ))}
             
-            {/* Duplicate set for seamless loop */}
             {certifications.map((cert, index) => (
               <div
                 key={`second-${index}`}
@@ -80,7 +78,7 @@ export default function CertifiedBy() {
                 <img
                   src={cert.logo}
                   alt={cert.alt}
-                  className="h-28 md:h-36 w-auto object-contain"
+                  className="h-28 md:h-36 w-auto object-contain dark:brightness-90 dark:contrast-125"
                 />
               </div>
             ))}

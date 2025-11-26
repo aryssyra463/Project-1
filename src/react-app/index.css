@@ -8,10 +8,16 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  @apply bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea, select, label, li {

@@ -653,12 +653,12 @@ export default function BlogPost() {
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
         <Header />
         <main className="max-w-4xl mx-auto px-6 py-20 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">Post Not Found</h1>
-          <p className="text-gray-600 mb-8">The blog post you're looking for doesn't exist.</p>
-          <Link to="/blog" className="text-blue-900 hover:text-blue-800 font-semibold">
+          <h1 className="text-5xl md:text-6xl font-bold text-blue-900 dark:text-white mb-4">Post Not Found</h1>
+          <p className="text-gray-600 dark:text-slate-400 mb-8">The blog post you're looking for doesn't exist.</p>
+          <Link to="/blog" className="text-blue-900 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-semibold">
             ← Back to Blog
           </Link>
         </main>
@@ -668,19 +668,19 @@ export default function BlogPost() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
       <Header />
       <main className="max-w-4xl mx-auto px-6 py-20">
-        <Link to="/blog" className="text-blue-900 hover:text-blue-800 mb-6 inline-block font-semibold">
+        <Link to="/blog" className="text-blue-900 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-6 inline-block font-semibold">
           ← Back to Blog
         </Link>
         
         <article>
-          <span className="inline-block px-3 py-1 bg-blue-100 text-blue-900 text-sm font-semibold rounded mb-4">
+          <span className="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-900 dark:text-blue-300 text-sm font-semibold rounded mb-4">
             {post.category}
           </span>
-          <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">{post.title}</h1>
-          <p className="text-gray-500 mb-8">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <h1 className="text-5xl md:text-6xl font-bold text-blue-900 dark:text-white mb-4">{post.title}</h1>
+          <p className="text-gray-500 dark:text-slate-400 mb-8">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
           
           <img
             src={post.image}
@@ -689,13 +689,13 @@ export default function BlogPost() {
           />
           
           <div
-            className="prose prose-lg max-w-none"
+            className="prose prose-lg max-w-none dark:prose-invert prose-headings:text-blue-900 dark:prose-headings:text-white prose-p:text-gray-700 dark:prose-p:text-slate-300"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>
 
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <h3 className="text-2xl font-bold text-blue-900 mb-6">Share This Article</h3>
+        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-slate-700">
+          <h3 className="text-2xl font-bold text-blue-900 dark:text-white mb-6">Share This Article</h3>
           <div className="flex flex-wrap gap-4">
             <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
               Share on Facebook
@@ -710,17 +710,17 @@ export default function BlogPost() {
         </div>
 
         {relatedPosts.length > 0 && (
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <h3 className="text-2xl font-bold text-blue-900 mb-6">Related Posts</h3>
+        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-slate-700">
+          <h3 className="text-2xl font-bold text-blue-900 dark:text-white mb-6">Related Posts</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {relatedPosts.map((related) => (
               <Link
                 key={related.id}
                 to={`/blog/${related.id}`}
-                className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition"
+                className="bg-gray-50 dark:bg-slate-800 rounded-lg p-6 hover:bg-gray-100 dark:hover:bg-slate-700 transition"
               >
-                  <span className="text-blue-600 text-sm font-semibold">{related.category}</span>
-                <h4 className="text-xl font-bold text-blue-900 mt-2">{related.title}</h4>
+                  <span className="text-blue-600 dark:text-blue-400 text-sm font-semibold">{related.category}</span>
+                <h4 className="text-xl font-bold text-blue-900 dark:text-white mt-2">{related.title}</h4>
               </Link>
             ))}
           </div>

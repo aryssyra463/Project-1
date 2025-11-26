@@ -192,11 +192,11 @@ export default function Blog() {
   });
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
       <Header />
       <main className="max-w-6xl mx-auto px-6 py-20">
-        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-4">Blogs</h1>
-        <p className="text-xl text-center text-blue-900 mb-12">
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 dark:text-white mb-4">Blogs</h1>
+        <p className="text-xl text-center text-blue-900 dark:text-slate-300 mb-12">
           Tips, strategies, and insights for test preparation
         </p>
 
@@ -206,7 +206,7 @@ export default function Blog() {
             placeholder="Search articles..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full md:w-1/2 mx-auto block px-6 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full md:w-1/2 mx-auto block px-6 py-3 border border-gray-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800 text-blue-900 dark:text-white placeholder-gray-400 dark:placeholder-slate-400"
           />
         </div>
 
@@ -218,8 +218,8 @@ export default function Blog() {
               onClick={() => handleCategoryClick(category)}
               className={`px-4 py-2 rounded-lg font-semibold transition cursor-pointer ${
                 selectedCategory === category
-                  ? 'bg-blue-900 text-white'
-                  : 'bg-gray-100 text-blue-900 hover:bg-gray-200'
+                  ? 'bg-blue-900 dark:bg-blue-600 text-white'
+                  : 'bg-gray-100 dark:bg-slate-800 text-blue-900 dark:text-slate-200 hover:bg-gray-200 dark:hover:bg-slate-700'
               }`}
             >
               {category}
@@ -232,7 +232,7 @@ export default function Blog() {
             <Link
               key={post.id}
               to={`/blog/${post.id}`}
-              className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition"
+              className="bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden hover:shadow-lg transition"
             >
               <img
                 src={post.image}
@@ -240,12 +240,12 @@ export default function Blog() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-900 text-sm font-semibold rounded mb-3">
+                <span className="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-900 dark:text-blue-300 text-sm font-semibold rounded mb-3">
                   {post.category}
                 </span>
-                <h3 className="text-xl font-bold text-blue-900 mb-2">{post.title}</h3>
-                <p className="text-blue-900 mb-4">{post.excerpt}</p>
-                <p className="text-sm text-blue-900">{new Date(post.date).toLocaleDateString()}</p>
+                <h3 className="text-xl font-bold text-blue-900 dark:text-white mb-2">{post.title}</h3>
+                <p className="text-blue-900 dark:text-slate-300 mb-4">{post.excerpt}</p>
+                <p className="text-sm text-blue-900 dark:text-slate-400">{new Date(post.date).toLocaleDateString()}</p>
               </div>
             </Link>
           ))}
@@ -253,7 +253,7 @@ export default function Blog() {
 
         {filteredPosts.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-blue-900">No articles found. Try a different search term or category.</p>
+            <p className="text-blue-900 dark:text-slate-300">No articles found. Try a different search term or category.</p>
           </div>
         )}
       </main>

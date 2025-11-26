@@ -143,7 +143,7 @@ export default function CourseDetail() {
   const course = courseData[courseName || 'ielts'] || courseData.ielts;
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
       <Header />
       <main>
         <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
@@ -160,12 +160,12 @@ export default function CourseDetail() {
                 <img src={course.image} alt={course.title} className="w-full rounded-lg shadow-lg" />
               </div>
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">What You Will Learn</h2>
+                <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-6">What You Will Learn</h2>
                 <ul className="space-y-3">
                   {course.learnPoints.map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
-                      <span className="text-green-600 mr-3 text-xl">✓</span>
-                      <span className="text-lg text-blue-900">{point}</span>
+                      <span className="text-green-600 dark:text-green-400 mr-3 text-xl">✓</span>
+                      <span className="text-lg text-blue-900 dark:text-slate-300">{point}</span>
                     </li>
                   ))}
                 </ul>
@@ -173,32 +173,32 @@ export default function CourseDetail() {
             </div>
 
             <div className="mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Course Features</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-6">Course Features</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 {course.features.map((feature: string, index: number) => (
-                  <div key={index} className="flex items-start bg-gray-50 p-4 rounded-lg">
-                    <span className="text-blue-900 mr-3 text-xl">•</span>
-                    <span className="text-blue-900">{feature}</span>
+                  <div key={index} className="flex items-start bg-gray-50 dark:bg-slate-800 p-4 rounded-lg">
+                    <span className="text-blue-900 dark:text-blue-400 mr-3 text-xl">•</span>
+                    <span className="text-blue-900 dark:text-slate-300">{feature}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-blue-50 rounded-lg p-8 mb-16">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4">Score Improvement Results</h3>
-              <p className="text-lg text-blue-900">{course.improvement}</p>
+            <div className="bg-blue-50 dark:bg-slate-800 rounded-lg p-8 mb-16">
+              <h3 className="text-2xl font-bold text-blue-900 dark:text-white mb-4">Score Improvement Results</h3>
+              <p className="text-lg text-blue-900 dark:text-slate-300">{course.improvement}</p>
             </div>
 
             <div className="mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Student Testimonials</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-6">Student Testimonials</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-blue-900 mb-4 italic">"Excellent coaching! Improved my score significantly."</p>
-                  <p className="font-semibold">- Student Review</p>
+                <div className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg">
+                  <p className="text-blue-900 dark:text-slate-300 mb-4 italic">"Excellent coaching! Improved my score significantly."</p>
+                  <p className="font-semibold text-blue-900 dark:text-white">- Student Review</p>
                 </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-blue-900 mb-4 italic">"Best investment for my test preparation. Highly recommended!"</p>
-                  <p className="font-semibold">- Student Review</p>
+                <div className="bg-gray-50 dark:bg-slate-800 p-6 rounded-lg">
+                  <p className="text-blue-900 dark:text-slate-300 mb-4 italic">"Best investment for my test preparation. Highly recommended!"</p>
+                  <p className="font-semibold text-blue-900 dark:text-white">- Student Review</p>
                 </div>
               </div>
             </div>
@@ -228,4 +228,3 @@ export default function CourseDetail() {
     </div>
   );
 }
-

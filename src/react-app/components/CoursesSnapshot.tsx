@@ -11,15 +11,15 @@ export default function CoursesSnapshot() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 dark:bg-slate-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-16">Courses Snapshot</h2>
+        <h2 className="text-5xl md:text-6xl font-bold text-center text-blue-900 dark:text-white mb-16">Courses Snapshot</h2>
         <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8">
           {courses.map((course, index) => (
             <Link
               key={index}
               to={course.path}
-              className="group relative overflow-hidden rounded-xl bg-white
+              className="group relative overflow-hidden rounded-xl bg-white dark:bg-slate-800
                 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.2)]
                 hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.3)]
                 hover:-translate-y-3
@@ -44,4 +44,3 @@ export default function CoursesSnapshot() {
     </section>
   );
 }
-

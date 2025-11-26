@@ -815,11 +815,11 @@ export default function FreeResources() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
       <Header />
       <main className="max-w-6xl mx-auto px-6 py-20">
-        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-4">Free Resources</h1>
-        <p className="text-xl text-center text-blue-900 mb-12">
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 dark:text-white mb-4">Free Resources</h1>
+        <p className="text-xl text-center text-blue-900 dark:text-slate-300 mb-12">
           Download study materials and read helpful articles
         </p>
 
@@ -833,7 +833,7 @@ export default function FreeResources() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
               required
-              className="flex-1 px-4 py-3 rounded-lg text-blue-900"
+              className="flex-1 px-4 py-3 rounded-lg text-blue-900 bg-white"
             />
             <button
               type="submit"
@@ -846,16 +846,16 @@ export default function FreeResources() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {resources.map((resource, index) => (
-            <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-              <span className="inline-block px-3 py-1 bg-blue-100 text-blue-900 text-sm font-semibold rounded mb-3">
+            <div key={index} className="bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-lg p-6 hover:shadow-lg transition">
+              <span className="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-900 dark:text-blue-300 text-sm font-semibold rounded mb-3">
                 {resource.type}
               </span>
-              <h3 className="text-xl font-bold text-blue-900 mb-2">{resource.title}</h3>
-              <p className="text-blue-900 mb-4">{resource.description}</p>
+              <h3 className="text-xl font-bold text-blue-900 dark:text-white mb-2">{resource.title}</h3>
+              <p className="text-blue-900 dark:text-slate-300 mb-4">{resource.description}</p>
               {resource.download ? (
                 <button 
                   onClick={() => handleDownloadResource(resource.title)}
-                  className="text-blue-900 font-semibold hover:text-blue-800 flex items-center gap-2"
+                  className="text-blue-900 dark:text-blue-400 font-semibold hover:text-blue-800 dark:hover:text-blue-300 flex items-center gap-2"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -863,7 +863,7 @@ export default function FreeResources() {
                   Download →
                 </button>
               ) : (
-                <Link to={`/blog/${resource.blogId}`} className="text-blue-900 font-semibold hover:text-blue-800">
+                <Link to={`/blog/${resource.blogId}`} className="text-blue-900 dark:text-blue-400 font-semibold hover:text-blue-800 dark:hover:text-blue-300">
                   Read Article →
                 </Link>
               )}
@@ -872,13 +872,13 @@ export default function FreeResources() {
         </div>
 
         <div>
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Blog Articles</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-6">Blog Articles</h2>
           <div className="space-y-4">
             {resources.filter(r => !r.download).map((article, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition">
-                <h3 className="text-xl font-bold text-blue-900 mb-2">{article.title}</h3>
-                <p className="text-blue-900 mb-3">{article.description}</p>
-                <Link to={`/blog/${article.blogId}`} className="text-blue-900 font-semibold hover:text-blue-800">
+              <div key={index} className="bg-gray-50 dark:bg-slate-800 rounded-lg p-6 hover:bg-gray-100 dark:hover:bg-slate-700 transition">
+                <h3 className="text-xl font-bold text-blue-900 dark:text-white mb-2">{article.title}</h3>
+                <p className="text-blue-900 dark:text-slate-300 mb-3">{article.description}</p>
+                <Link to={`/blog/${article.blogId}`} className="text-blue-900 dark:text-blue-400 font-semibold hover:text-blue-800 dark:hover:text-blue-300">
                   Read More →
                 </Link>
               </div>
@@ -888,7 +888,7 @@ export default function FreeResources() {
           <div className="mt-8 text-center">
             <Link 
               to="/blog" 
-              className="inline-block px-8 py-3 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-800 transition"
+              className="inline-block px-8 py-3 bg-blue-900 dark:bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-800 dark:hover:bg-blue-500 transition"
             >
               View All Blog Articles
             </Link>

@@ -13,7 +13,7 @@ export default function Testimonials() {
       name: 'Sarah Johnson',
       course: 'IELTS Band 8.0',
       thumbnail: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400',
-      videoId: 'dQw4w9WgXcQ' // Sample YouTube video ID
+      videoId: 'dQw4w9WgXcQ'
     },
     {
       id: 2,
@@ -220,14 +220,12 @@ export default function Testimonials() {
       const maxScroll = container.scrollWidth - container.clientWidth;
       
       if (direction === 'right') {
-        // If at or near the end, scroll to beginning
         if (container.scrollLeft >= maxScroll - 10) {
           container.scrollTo({ left: 0, behavior: 'smooth' });
         } else {
           container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         }
       } else {
-        // If at the beginning, scroll to end
         if (container.scrollLeft <= 10) {
           container.scrollTo({ left: maxScroll, behavior: 'smooth' });
         } else {
@@ -238,29 +236,27 @@ export default function Testimonials() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
       <Header />
       <main className="max-w-6xl mx-auto px-6 py-20">
-        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-4">Student Testimonials</h1>
-        <p className="text-xl text-center text-blue-900 mb-12">
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 dark:text-white mb-4">Student Testimonials</h1>
+        <p className="text-xl text-center text-blue-900 dark:text-slate-300 mb-12">
           Real stories from students who achieved their target scores
         </p>
 
         {/* Video Testimonials Section */}
         <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-8">Video Testimonials</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-8">Video Testimonials</h2>
           
           <div className="relative">
-            {/* Left Arrow */}
             <button
               onClick={() => scroll('left')}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-colors duration-200"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white dark:bg-slate-800 rounded-full p-3 shadow-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors duration-200"
               aria-label="Scroll left"
             >
-              <ChevronLeft className="w-6 h-6 text-blue-900" />
+              <ChevronLeft className="w-6 h-6 text-blue-900 dark:text-white" />
             </button>
 
-            {/* Scrollable Container */}
             <div
               ref={scrollRef}
               className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-4"
@@ -277,25 +273,20 @@ export default function Testimonials() {
                       shadow-[0_20px_50px_-15px_rgba(0,0,0,0.4),0_10px_20px_-10px_rgba(0,0,0,0.2)]
                       hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5),0_15px_30px_-10px_rgba(0,0,0,0.3)]
                       group-hover:-translate-y-4 group-hover:rotate-x-2
-                      border border-white/20"
+                      border border-white/20 dark:border-slate-700"
                     style={{ transformStyle: 'preserve-3d' }}
                   >
-                    {/* Thumbnail */}
                     <div className="aspect-[3/4] relative">
                       <img
                         src={video.thumbnail}
                         alt={video.name}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
-                      {/* Gradient Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/60 transition-colors duration-300" />
-                      
-                      {/* Shine Effect */}
                       <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       
-                      {/* Play Button */}
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-18 h-18 bg-white/95 rounded-full flex items-center justify-center 
+                        <div className="w-18 h-18 bg-white/95 dark:bg-slate-200 rounded-full flex items-center justify-center 
                           group-hover:scale-110 transition-all duration-300 
                           shadow-[0_8px_30px_rgba(0,0,0,0.3)]
                           group-hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)]
@@ -304,27 +295,24 @@ export default function Testimonials() {
                         </div>
                       </div>
                       
-                      {/* Bottom Info Overlay */}
                       <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                         <h3 className="font-bold text-lg drop-shadow-lg">{video.name}</h3>
                         <p className="text-white/90 text-sm font-medium drop-shadow-md">{video.course}</p>
                       </div>
                     </div>
                     
-                    {/* 3D Bottom Edge Effect */}
-                    <div className="h-2 bg-gradient-to-b from-gray-200 to-gray-400" />
+                    <div className="h-2 bg-gradient-to-b from-gray-200 to-gray-400 dark:from-slate-600 dark:to-slate-800" />
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* Right Arrow */}
             <button
               onClick={() => scroll('right')}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-colors duration-200"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white dark:bg-slate-800 rounded-full p-3 shadow-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors duration-200"
               aria-label="Scroll right"
             >
-              <ChevronRight className="w-6 h-6 text-blue-900" />
+              <ChevronRight className="w-6 h-6 text-blue-900 dark:text-white" />
             </button>
           </div>
         </div>
@@ -360,23 +348,23 @@ export default function Testimonials() {
 
         {/* Written Testimonials Section */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-8">Written Testimonials</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-8">Written Testimonials</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
-                className="bg-white rounded-xl p-6 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.15)] hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.25)] hover:-translate-y-2 transition-all duration-300"
+                className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.15)] hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.25)] hover:-translate-y-2 transition-all duration-300"
               >
                 <div className="flex items-center mb-4">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover mr-4 ring-2 ring-blue-100"
+                    className="w-16 h-16 rounded-full object-cover mr-4 ring-2 ring-blue-100 dark:ring-slate-600"
                   />
                   <div>
-                    <p className="font-bold text-blue-900">{testimonial.name}</p>
-                    <p className="text-sm text-gray-600">{testimonial.country}</p>
-                    <p className="text-sm text-blue-600 font-semibold">{testimonial.course}</p>
+                    <p className="font-bold text-blue-900 dark:text-white">{testimonial.name}</p>
+                    <p className="text-sm text-gray-600 dark:text-slate-400">{testimonial.country}</p>
+                    <p className="text-sm text-blue-600 dark:text-blue-400 font-semibold">{testimonial.course}</p>
                   </div>
                 </div>
                 <div className="flex mb-3">
@@ -384,7 +372,7 @@ export default function Testimonials() {
                     <span key={i} className="text-yellow-400 text-lg">★</span>
                   ))}
                 </div>
-                <p className="text-gray-700 italic leading-relaxed">"{testimonial.text}"</p>
+                <p className="text-gray-700 dark:text-slate-300 italic leading-relaxed">"{testimonial.text}"</p>
               </div>
             ))}
           </div>

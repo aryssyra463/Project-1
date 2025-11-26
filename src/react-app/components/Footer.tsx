@@ -3,7 +3,7 @@ import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 dark:bg-slate-900 text-white py-12 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-8">
           <div>
@@ -46,7 +46,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm mb-4">Phone: +1 (234) 567-890</p>
             <Link
               to="/book-demo"
-              className="inline-block px-4 py-2 bg-blue-900 text-white text-sm font-semibold rounded hover:bg-blue-800 transition"
+              className="inline-block px-4 py-2 bg-blue-900 dark:bg-blue-600 text-white text-sm font-semibold rounded hover:bg-blue-800 dark:hover:bg-blue-500 transition"
             >
               Book Demo
             </Link>

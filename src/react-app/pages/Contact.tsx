@@ -52,27 +52,27 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
       <Header />
       <main className="max-w-6xl mx-auto px-6 py-20">
-        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 mb-4">Contact Us</h1>
-        <p className="text-xl text-center text-blue-900 mb-12">
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-blue-900 dark:text-white mb-4">Contact Us</h1>
+        <p className="text-xl text-center text-blue-900 dark:text-slate-300 mb-12">
           Get in touch for inquiries or support
         </p>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Contact Information</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-6">Contact Information</h2>
             <div className="space-y-4 mb-8">
               <div>
-                <p className="font-semibold text-blue-900 mb-1">Email</p>
-                <a href="mailto:info@fluentedge.com" className="text-blue-900 hover:text-blue-800">
+                <p className="font-semibold text-blue-900 dark:text-white mb-1">Email</p>
+                <a href="mailto:info@fluentedge.com" className="text-blue-900 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
                   info@fluentedge.com
                 </a>
               </div>
               <div>
-                <p className="font-semibold text-blue-900 mb-1">Phone</p>
-                <a href="tel:+1234567890" className="text-blue-900 hover:text-blue-800">
+                <p className="font-semibold text-blue-900 dark:text-white mb-1">Phone</p>
+                <a href="tel:+1234567890" className="text-blue-900 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
                   +1 (234) 567-890
                 </a>
               </div>
@@ -91,18 +91,18 @@ export default function Contact() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-blue-900 mb-4">Follow Us</h3>
+              <h3 className="font-semibold text-blue-900 dark:text-white mb-4">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-blue-900 hover:text-blue-800">Facebook</a>
-                <a href="#" className="text-blue-900 hover:text-blue-800">Instagram</a>
-                <a href="#" className="text-blue-900 hover:text-blue-800">LinkedIn</a>
-                <a href="#" className="text-blue-900 hover:text-blue-800">YouTube</a>
+                <a href="#" className="text-blue-900 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">Facebook</a>
+                <a href="#" className="text-blue-900 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">Instagram</a>
+                <a href="#" className="text-blue-900 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">LinkedIn</a>
+                <a href="#" className="text-blue-900 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">YouTube</a>
               </div>
             </div>
           </div>
 
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Send a Message</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-6">Send a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="text"
@@ -111,7 +111,7 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="Full Name"
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800 text-blue-900 dark:text-white placeholder-gray-400 dark:placeholder-slate-400"
               />
               <input
                 type="email"
@@ -120,7 +120,7 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="Email"
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800 text-blue-900 dark:text-white placeholder-gray-400 dark:placeholder-slate-400"
               />
               <input
                 type="tel"
@@ -128,13 +128,13 @@ export default function Contact() {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Phone"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800 text-blue-900 dark:text-white placeholder-gray-400 dark:placeholder-slate-400"
               />
               <select
                 name="country"
                 value={formData.country}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800 text-blue-900 dark:text-white"
               >
                 <option value="">Select Country</option>
                 <option value="us">United States</option>
@@ -150,24 +150,24 @@ export default function Contact() {
                 placeholder="Message"
                 rows={5}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800 text-blue-900 dark:text-white placeholder-gray-400 dark:placeholder-slate-400"
               />
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-blue-900 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-blue-900 dark:bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 dark:hover:bg-blue-500 transition disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
 
               {submitStatus === 'success' && (
-                <div className="p-4 bg-green-100 text-green-800 rounded-lg text-center">
+                <div className="p-4 bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-300 rounded-lg text-center">
                   ✅ Thank you! Your message has been sent successfully. We'll get back to you soon!
                 </div>
               )}
 
               {submitStatus === 'error' && (
-                <div className="p-4 bg-red-100 text-red-800 rounded-lg text-center">
+                <div className="p-4 bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-300 rounded-lg text-center">
                   ❌ Something went wrong. Please try again or contact us directly via email.
                 </div>
               )}
@@ -179,4 +179,3 @@ export default function Contact() {
     </div>
   );
 }
-
