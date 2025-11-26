@@ -27,7 +27,7 @@ export default function CertifiedBy() {
     },
     {
       name: 'ISO',
-      logo: '/CertifiedBy/btn1.png',
+      logo: '/CertifiedBy/btn6.png',
       alt: 'ISO International Organization for Standardization'
     }
   ];
